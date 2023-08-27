@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h2{
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        body{
+            min-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 30vw;
+            border: dotted black 1px;
+            padding: 50px;
+            border-radius: 5px;
+        }
+        input{
+            font-size: 12pt;
+            min-height: 40px;
+            border-radius: 5px;
+            border: solid black 2px;
+            cursor: pointer;
+        }
+
+        label{
+            font-size: 15pt;
+        }
+        button{
+            min-height: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            background: none;
+            border: solid black 1px;
+        }
+        button:hover{
+            background-color: rgba(65, 65, 65, 0.399);
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="signos.php">
+        <h2>Informe sua data de nascimento para consultar seu signo</h2>
+        <br>
+        <input required type="date" name="nascimento" id="nascimento">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
