@@ -41,7 +41,6 @@ h2{
 .about, .desc{
     padding: 30px;
 }
-
 .aboutContainer, .descContainer{
     position: relative;
     text-align: justify;
